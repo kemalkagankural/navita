@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" width="1800" height="900">
+  <rect width="1800" height="900" fill="#ffffff"/>
+
+  <defs>
+    <style>
+      .navy{fill:#06275a;}
+      .red{fill:#e21b1b;}
+      .yellow{fill:#ffd900;}
+      .black{fill:#111111;}
+      .stroke{stroke:#d9d9d9;stroke-width:2;fill:none;}
+      .word{font-family:'Brush Script MT','Segoe Script','Snell Roundhand',cursive;font-size:250px;font-style:italic;fill:#ffffff;}
+    </style>
+  </defs>
+
+  <g transform="translate(55 235)">
+    <g transform="translate(0 0)">
+      <rect x="0" y="0" width="260" height="260" fill="#fff" stroke="#d9d9d9" stroke-width="2"/>
+      <rect x="0" y="0" width="86.67" height="86.67" class="navy"/>
+      <rect x="173.33" y="0" width="86.67" height="86.67" class="navy"/>
+      <rect x="86.67" y="86.67" width="86.67" height="86.67" class="navy"/>
+      <rect x="0" y="173.33" width="86.67" height="86.67" class="navy"/>
+      <rect x="173.33" y="173.33" width="86.67" height="86.67" class="navy"/>
+    </g>
+
+    <g transform="translate(295 0)">
+      <rect x="0" y="0" width="260" height="260" fill="#fff" stroke="#d9d9d9" stroke-width="2"/>
+      <rect x="0" y="86" width="260" height="174" class="navy"/>
+      <polygon points="0,260 130,170 260,260" fill="#ffffff"/>
+    </g>
+
+    <g transform="translate(590 0)">
+      <rect x="0" y="0" width="260" height="260" fill="#fff" stroke="#d9d9d9" stroke-width="2"/>
+      <polygon points="0,0 32,0 260,228 260,260 228,260 0,32" class="red"/>
+      <polygon points="260,0 228,0 0,228 0,260 32,260 260,32" class="red"/>
+    </g>
+
+    <g transform="translate(885 0)">
+      <rect x="0" y="0" width="260" height="260" class="yellow"/>
+      <rect x="0" y="0" width="260" height="260" class="stroke"/>
+      <circle cx="130" cy="130" r="68" class="black"/>
+    </g>
+
+    <g transform="translate(1180 0)">
+      <rect x="0" y="0" width="260" height="86.67" class="navy"/>
+      <rect x="0" y="86.67" width="260" height="86.67" fill="#fff"/>
+      <rect x="0" y="173.33" width="260" height="86.67" class="red"/>
+      <rect x="0" y="0" width="260" height="260" class="stroke"/>
+    </g>
+
+    <g transform="translate(1475 0)">
+      <rect x="0" y="0" width="260" height="260" fill="#fff" stroke="#d9d9d9" stroke-width="2"/>
+      <rect x="0" y="86" width="260" height="174" class="navy"/>
+      <polygon points="0,260 130,170 260,260" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <g transform="translate(50 590)">
+    <rect x="0" y="0" width="1700" height="240" fill="#06275a"/>
+    <text x="850" y="178" text-anchor="middle" class="word">navita</text>
+  </g>
+</svg>
