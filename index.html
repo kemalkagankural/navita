@@ -306,12 +306,12 @@
                 <!-- Right Visual Column (Styled Overlap Images) -->
                 <div class="lg:col-span-6 relative h-[450px] md:h-[550px] w-full">
                     <div class="absolute top-0 right-0 w-[80%] h-[75%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transition-transform duration-500 hover:scale-[1.02]">
-                        <img src="images/WhatsApp Image 2026-06-04 at 18.34.44.jpeg" 
+                        <img src="images/mekan2.jpeg" 
                              alt="Navita Restoran Masaları" 
                              class="w-full h-full object-cover">
                     </div>
                     <div class="absolute bottom-0 left-0 w-[65%] h-[55%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transition-transform duration-500 hover:scale-[1.05]">
-                        <img src="images/3.png" 
+                        <img src="images/mekan3.jpeg" 
                              alt="Navita Peynir Tabaklağı" 
                              class="w-full h-full object-cover">
                     </div>
@@ -320,144 +320,112 @@
         </div>
     </section>
 
-    <!-- SECTION 4: GASTRO-BISTRO MENÜ (INTERACTIVE TABS) -->
+    <!-- SECTION 4: NAVITA GERÇEK MENÜ -->
     <section id="menu" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold tracking-[0.3em] uppercase text-navitaGold mb-2 block">DAMAKTA İZ BIRAKANLAR</span>
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-navitaNavy mb-4">Navita'nın Özel Seçkisi</h2>
-                <p class="text-slate-600">Her tabakta taze Ege esintisi ve modern gastronomi sanatının dengesini hissedeceksiniz.</p>
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold tracking-[0.3em] uppercase text-navitaGold mb-2 block">NAVITA MENÜ</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-navitaNavy mb-4">Lezzet & Bar Seçkisi</h2>
+                <p class="text-slate-600">
+                    Navita Bistro'nun gerçek menüsünden seçilen başlangıçlar, salatalar, ana yemekler, makarnalar,
+                    pizzalar, alkolsüz içecekler, kokteyller, biralar, viskiler, rakılar, şaraplar ve şampanyalar.
+                </p>
+                <p class="text-xs text-slate-400 mt-4 tracking-wider uppercase">Fiyat bilgisi için işletmemizle iletişime geçebilirsiniz.</p>
             </div>
 
             <!-- Tabs Navigation -->
-            <div class="flex flex-wrap justify-center gap-4 mb-16" id="menu-tabs">
-                <button onclick="switchTab('meze')" class="tab-btn px-6 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-navitaNavy text-white border-navitaNavy" id="tab-meze">
-                    Meze & Başlangıçlar
-                </button>
-                <button onclick="switchTab('deniz')" class="tab-btn px-6 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-transparent text-slate-600 border-slate-200 hover:border-navitaNavy hover:text-navitaNavy" id="tab-deniz">
-                    Deniz & Izgara
-                </button>
-                <button onclick="switchTab('bar')" class="tab-btn px-6 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-transparent text-slate-600 border-slate-200 hover:border-navitaNavy hover:text-navitaNavy" id="tab-bar">
-                    İmza Kokteyller
-                </button>
+            <div class="flex flex-wrap justify-center gap-3 mb-14" id="menu-tabs">
+                <button onclick="switchTab('baslangic')" class="tab-btn px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-navitaNavy text-white border-navitaNavy" id="tab-baslangic">Başlangıçlar</button>
+                <button onclick="switchTab('anayemek')" class="tab-btn px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-transparent text-slate-600 border-slate-200 hover:border-navitaNavy hover:text-navitaNavy" id="tab-anayemek">Ana Yemekler</button>
+                <button onclick="switchTab('makarna')" class="tab-btn px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-transparent text-slate-600 border-slate-200 hover:border-navitaNavy hover:text-navitaNavy" id="tab-makarna">Makarna & Pizza</button>
+                <button onclick="switchTab('alkolsuz')" class="tab-btn px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-transparent text-slate-600 border-slate-200 hover:border-navitaNavy hover:text-navitaNavy" id="tab-alkolsuz">Alkolsüz</button>
+                <button onclick="switchTab('bar')" class="tab-btn px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-transparent text-slate-600 border-slate-200 hover:border-navitaNavy hover:text-navitaNavy" id="tab-bar">Bar</button>
+                <button onclick="switchTab('sarap')" class="tab-btn px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border bg-transparent text-slate-600 border-slate-200 hover:border-navitaNavy hover:text-navitaNavy" id="tab-sarap">Şarap & Şampanya</button>
             </div>
 
-            <!-- Tab Content Items -->
-            <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Meze Content (Default Active) -->
-                <div class="menu-group meze-items flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=300&q=80" alt="Girit Ezmesi" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Fıstıklı Girit Ezmesi</h3>
-                                <span class="text-navitaNavy font-bold">₺290</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Üç çeşit peynirin füzyonu, taze nane esintisi, sızma zeytinyağı ve Antep fıstığı ile kavrulmuş.</p>
-                        </div>
-                        <span class="text-[10px] text-navitaGold tracking-widest uppercase font-bold mt-2"><i class="fa-solid fa-star mr-1"></i> Şefin İmzası</span>
-                    </div>
+            <!-- Menu Grid -->
+            <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- BAŞLANGIÇLAR / SALATALAR / ARA SICAKLAR / TABAKLAR -->
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/greensalad.jpg" alt="Navita Mevsim Salata" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Salatalar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Mevsim Salata</h3><p class="text-sm text-slate-600 mt-2">Günlük yeşillikler ve taze sebzelerle hazırlanan hafif salata.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/goatchees.jpg" alt="Navita Roka Peynirli Salata" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Salatalar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Roka Peynirli Salata</h3><p class="text-sm text-slate-600 mt-2">Roka, peynir ve Ege dokunuşlarıyla ferah bir başlangıç.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/caprese,salad.jpg" alt="Navita Caprese Salata" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Salatalar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Caprese Salata</h3><p class="text-sm text-slate-600 mt-2">Domates, mozzarella ve fesleğenin Akdeniz klasiği.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/paçanga.jpg" alt="Navita Paçanga Böreği" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ara Sıcaklar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Paçanga Böreği</h3><p class="text-sm text-slate-600 mt-2">Sıcak, çıtır ve paylaşmalık klasik ara sıcak.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/potato.jpg" alt="Navita Patates Tava" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ara Sıcaklar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Patates Tava & Patates Cipsi</h3><p class="text-sm text-slate-600 mt-2">Paylaşmalık, sıcak ve çıtır atıştırmalık seçenekleri.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/saganaki.jpg" alt="Navita Saganaki" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ara Sıcaklar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Saganaki</h3><p class="text-sm text-slate-600 mt-2">Sıcak peynir lezzetiyle Ege sofralarına güçlü bir eşlikçi.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/cheeseplate.jpg" alt="Navita Peynir Tabağı" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Şarap Tabakları</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Peynir Tabağı</h3><p class="text-sm text-slate-600 mt-2">Şarap eşlikçileriyle hazırlanan seçkin peynir tabağı.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/charcuterie,cheese,.jpg" alt="Navita Soğuk Etli Peynir Tabağı" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Şarap Tabakları</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Soğuk Etli Peynir Tabağı</h3><p class="text-sm text-slate-600 mt-2">Şarap ve sohbet eşlikçisi zengin paylaşım tabağı.</p></div>
+                </div>
+                <div class="menu-group baslangic-items flex flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <img loading="lazy" src="images/fruit-platter,nuts.jpg" alt="Navita Meyve Çerez Tabağı" class="h-52 w-full object-cover">
+                    <div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Meyve & Çerez</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Meyve & Çerez Tabakları</h3><p class="text-sm text-slate-600 mt-2">Dolu meyve tabağı, bebek meyve tabağı ve çerez seçenekleri.</p></div>
                 </div>
 
-                <div class="menu-group meze-items flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80" alt="Deniz Börülcesi" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Sarımsaklı Deniz Börülcesi</h3>
-                                <span class="text-navitaNavy font-bold">₺260</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Gömeç zeytinliklerinin ilk hasat sızma zeytinyağı, limon sirkesi ve taze bahçe sarımsağı marine eşliğinde.</p>
-                        </div>
-                        <span class="text-[10px] text-slate-400 tracking-widest uppercase font-bold mt-2">Glutensiz & Vegan</span>
-                    </div>
-                </div>
+                <!-- ANA YEMEKLER -->
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/tenderloin.jpg" alt="Navita Bonfile" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ana Yemek</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Bonfile</h3><p class="text-sm text-slate-600 mt-2">Izgara dana bonfile, güçlü lezzet ve şık sunum.</p></div></div>
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/lamb-chops,grill.jpg" alt="Navita Kuzu Pirzola" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ana Yemek</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Kuzu Pirzola</h3><p class="text-sm text-slate-600 mt-2">Izgara kuzu pirzola, aromatik baharat dokunuşlarıyla.</p></div></div>
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/tbone-steak.jpg" alt="Navita T-Bone Steak" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Steak</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">T-Bone Steak</h3><p class="text-sm text-slate-600 mt-2">Et severler için doyurucu ve premium steak deneyimi.</p></div></div>
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/dallas-steak.jpg" alt="Navita Dallas Steak" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Steak</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Dallas Steak</h3><p class="text-sm text-slate-600 mt-2">Yoğun aromalı, güçlü ve gösterişli steak seçkisi.</p></div></div>
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/chicken-schnitzel.jpg" alt="Navita Tavuk Şinitzel" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ana Yemek</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Tavuk Şinitzel</h3><p class="text-sm text-slate-600 mt-2">Dışı çıtır, içi yumuşak klasik tavuk lezzeti.</p></div></div>
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/gourmet-burger.jpg" alt="Navita Hamburger" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ana Yemek</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Hamburger</h3><p class="text-sm text-slate-600 mt-2">Gourmet dokunuşlarla hazırlanan Navita burger.</p></div></div>
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/turkish-meatballs.jpg" alt="Navita Köfte" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Ana Yemek</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Köfte</h3><p class="text-sm text-slate-600 mt-2">Klasik ızgara köfte, sade ve lezzetli sunumuyla.</p></div></div>
+                <div class="menu-group anayemek-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/ribeye-steak.jpg" alt="Navita Antrikot" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Steak</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Antrikot</h3><p class="text-sm text-slate-600 mt-2">Sulu, aromatik ve ızgara karakteri güçlü et seçkisi.</p></div></div>
 
-                <div class="menu-group meze-items flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=300&q=80" alt="Tereyağlı Karides" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Sıcak Güveçte Karides</h3>
-                                <span class="text-navitaNavy font-bold">₺410</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Bol tereyağlı, pullu sarımsak, taze kekik ve pul biber ile döküm tavada sıcak servis edilir.</p>
-                        </div>
-                        <span class="text-[10px] text-navitaGold tracking-widest uppercase font-bold mt-2"><i class="fa-solid fa-fire mr-1"></i> Çok Satan</span>
-                    </div>
-                </div>
+                <!-- MAKARNA & PİZZA -->
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/tortellini,pasta.jpg" alt="Navita Tortellini" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Makarna</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Tortellini</h3><p class="text-sm text-slate-600 mt-2">İtalyan mutfağından dolgulu makarna seçkisi.</p></div></div>
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/shrimp-pasta.jpg" alt="Navita Karidesli Collezione" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Makarna</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Karidesli Collezione</h3><p class="text-sm text-slate-600 mt-2">Deniz ürünleri dokunuşuyla hazırlanan özel makarna.</p></div></div>
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/bolognese,pasta.jpg" alt="Navita Bolonez Soslu Collezione" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Makarna</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Bolonez Soslu Collezione</h3><p class="text-sm text-slate-600 mt-2">Bolonez sosla hazırlanan doyurucu makarna lezzeti.</p></div></div>
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/Pesto Soslu Penne.jpg" alt="Navita Pesto Soslu Penne" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Makarna</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Pesto Soslu Penne</h3><p class="text-sm text-slate-600 mt-2">Fesleğen pesto sosuyla hazırlanan aromatik penne.</p></div></div>
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/pizza-margherita.jpg" alt="Navita Margherita Pizza" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Pizza</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Margherita</h3><p class="text-sm text-slate-600 mt-2">Domates, mozzarella ve fesleğenin klasik uyumu.</p></div></div>
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/vegetarian-pizza.jpg" alt="Navita Vejeteryen Pizza" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Pizza</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Navita Vejeteryen</h3><p class="text-sm text-slate-600 mt-2">Sebzelerle zenginleştirilmiş hafif ve dengeli pizza.</p></div></div>
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/seafood-pizza.jpg" alt="Navita Marinez Pizza" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Pizza</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Marinez</h3><p class="text-sm text-slate-600 mt-2">Deniz ürünleri esintili özel pizza yorumu.</p></div></div>
+                <div class="menu-group makarna-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/napoli-pizza.jpg" alt="Navita Napoli Pizza" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Pizza</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Napoli</h3><p class="text-sm text-slate-600 mt-2">İtalyan karakterli, sade ve lezzetli pizza seçkisi.</p></div></div>
 
-                <div class="menu-group meze-items flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=300&q=80" alt="Ahtapot Izgara" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Ege Soslu Ahtapot Izgara</h3>
-                                <span class="text-navitaNavy font-bold">₺520</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Odun ateşinde demlenmiş ahtapot bacağı, kapari, kurutulmuş domates ve narenciye sos ile.</p>
-                        </div>
-                        <span class="text-[10px] text-navitaGold tracking-widest uppercase font-bold mt-2"><i class="fa-solid fa-anchor mr-1"></i> Denizden Özel</span>
-                    </div>
-                </div>
+                <!-- ALKOLSÜZ -->
+                <div class="menu-group alkolsuz-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/cola,drink.jpg" alt="Navita Coca Cola" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Alkolsüz</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Coca Cola & Zero</h3><p class="text-sm text-slate-600 mt-2">Klasik gazlı içecek seçenekleri.</p></div></div>
+                <div class="menu-group alkolsuz-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/Fanta & Sprite.jpg" alt="Navita Fanta Sprite" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Alkolsüz</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Fanta & Sprite</h3><p class="text-sm text-slate-600 mt-2">Serinletici gazlı içecek alternatifleri.</p></div></div>
+                <div class="menu-group alkolsuz-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/iced-tea.jpg" alt="Navita Fuse Tea" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Alkolsüz</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Fuse Tea</h3><p class="text-sm text-slate-600 mt-2">Yemek yanında ferahlatıcı soğuk çay seçeneği.</p></div></div>
+                <div class="menu-group alkolsuz-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/sparkling-water.jpg" alt="Navita Soda Maden Suyu" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Alkolsüz</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Soda & Maden Suyu</h3><p class="text-sm text-slate-600 mt-2">Sade, hafif ve yemek eşlikçisi içecekler.</p></div></div>
+                <div class="menu-group alkolsuz-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/energy.jpg" alt="Navita Redbull" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Alkolsüz</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Redbull</h3><p class="text-sm text-slate-600 mt-2">Enerji ve ferahlık isteyenler için klasik seçenek.</p></div></div>
 
-                <!-- Deniz & Izgara Content (Initially Hidden) -->
-                <div class="menu-group deniz-items hidden flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=300&q=80" alt="Somon Izgara" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Asma Yaprağında Levrek</h3>
-                                <span class="text-navitaNavy font-bold">₺640</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Özel baharatlarla sarılı levrek fileto, asma yaprağında fırınlanmış ve ılık Akdeniz salatası ile.</p>
-                        </div>
-                        <span class="text-[10px] text-navitaGold tracking-widest uppercase font-bold mt-2"><i class="fa-solid fa-leaf mr-1"></i> Geleneksel</span>
-                    </div>
-                </div>
+                <!-- BAR -->
+                <div class="menu-group bar-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/beer-bottle.jpg" alt="Navita Biralar" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Biralar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Bira Seçkisi</h3><p class="text-sm text-slate-600 mt-2">Tuborg, Carlsberg, Blanc, Frederik, Weihenstephan, Miller ve Becks.</p></div></div>
+                <div class="menu-group bar-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/mojito,cocktail.jpg" alt="Navita Mojito" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Classic Cocktail</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Mojito</h3><p class="text-sm text-slate-600 mt-2">Nane, lime ve ferahlatıcı aromalarla klasik kokteyl.</p></div></div>
+                <div class="menu-group bar-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/gin-tonic,cocktail.jpg" alt="Navita Gin Tonic" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Classic Cocktail</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Gin Tonic</h3><p class="text-sm text-slate-600 mt-2">Cin ve tonik dengesiyle zamansız bir bar klasiği.</p></div></div>
+                <div class="menu-group bar-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/margarita,cocktail.jpg" alt="Navita Margarita" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Classic Cocktail</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Margarita</h3><p class="text-sm text-slate-600 mt-2">Narenciye ve tuz dokunuşuyla canlı bir kokteyl.</p></div></div>
+                <div class="menu-group bar-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/long-island-iced-tea,cocktail.jpg" alt="Navita Long Island" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Classic Cocktail</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Long Island</h3><p class="text-sm text-slate-600 mt-2">Yoğun aromalı, güçlü ve klasik kokteyl seçimi.</p></div></div>
+                <div class="menu-group bar-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/whiskey,bottle.jpg" alt="Navita Viskiler" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Viskiler</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Viskiler</h3><p class="text-sm text-slate-600 mt-2">Jack Daniels, Chivas, Macallan, Talisker, Lagavulin, Glenfiddich ve daha fazlası.</p></div></div>
+                <div class="menu-group bar-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/raki,glass.jpg" alt="Navita Rakılar" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Rakılar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Rakılar</h3><p class="text-sm text-slate-600 mt-2">Ege mezeleriyle uyumlu klasik rakı seçenekleri.</p></div></div>
 
-                <div class="menu-group deniz-items hidden flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80" alt="Kuzu Pirzola" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Kekikli Kuzu Pirzola</h3>
-                                <span class="text-navitaNavy font-bold">₺720</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Dağ kekiğiyle marine edilmiş kuzu pirzolalar, közlenmiş patlıcan beğendi yatağında servis edilir.</p>
-                        </div>
-                        <span class="text-[10px] text-slate-400 tracking-widest uppercase font-bold mt-2">Yerel Hayvancılık</span>
-                    </div>
-                </div>
-
-                <!-- Bar / Kokteyl Content (Initially Hidden) -->
-                <div class="menu-group bar-items hidden flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80" alt="Navita Breeze" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Navita Sunset Breeze</h3>
-                                <span class="text-navitaNavy font-bold">₺390</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Cin, taze ebegümeci infüzyonu, fesleğen, limon suyu ve soda ile hazırlanan imza ferahlatıcı kokteyl.</p>
-                        </div>
-                        <span class="text-[10px] text-navitaGold tracking-widest uppercase font-bold mt-2"><i class="fa-solid fa-cocktail mr-1"></i> Ev Yapımı Şurup</span>
-                    </div>
-                </div>
-
-                <div class="menu-group bar-items hidden flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-navitaSand border border-slate-100 transition-all duration-300 hover:shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=300&q=80" alt="Aegean Mule" class="w-full md:w-32 h-32 object-cover rounded-xl shadow">
-                    <div class="flex-1 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h3 class="font-serif text-xl font-bold text-navitaNavy">Aegean Gold Mule</h3>
-                                <span class="text-navitaNavy font-bold">₺380</span>
-                            </div>
-                            <p class="text-xs text-slate-600 leading-relaxed">Votka, zencefil gazozu, taze nane ve satsuma mandalinası özünün bakır bardakta efsanevi buluşması.</p>
-                        </div>
-                        <span class="text-[10px] text-slate-400 tracking-widest uppercase font-bold mt-2">Satsuma Mandalinli</span>
-                    </div>
-                </div>
+                <!-- ŞARAPLAR / ŞAMPANYALAR -->
+                <div class="menu-group sarap-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/Maadra.jpg" alt="Navita Kırmızı Şaraplar" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Şaraplar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Kırmızı Şaraplar</h3><p class="text-sm text-slate-600 mt-2">Ma'adra ve Yedi Bilgeler başta olmak üzere Kuzey Ege seçkileri.</p></div></div>
+                <div class="menu-group sarap-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/yedibilgeler.jpg" alt="Navita Beyaz Şaraplar" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Şaraplar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Beyaz Şaraplar</h3><p class="text-sm text-slate-600 mt-2">Yedi Bilgeler, Cielo ve ferah beyaz şarap alternatifleri.</p></div></div>
+                <div class="menu-group sarap-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/cielo.jpg" alt="Navita Rose Şaraplar" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Şaraplar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Rose Şaraplar</h3><p class="text-sm text-slate-600 mt-2">Cielo Pinot Grigio Rose ve hafif içimli rose seçenekleri.</p></div></div>
+                <div class="menu-group sarap-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/ChatGPT Image 4 Tem 2026 23_35_36.png" alt="Navita Şampanyalar" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Şampanyalar</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Şampanyalar</h3><p class="text-sm text-slate-600 mt-2">Chandon Garden, Bottera Miami, Petalo Amore ve Prosecco seçkileri.</p></div></div>
+                <div class="menu-group sarap-items hidden flex-col bg-navitaSand rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300"><img loading="lazy" src="images/Wine Accompaniments.jpg" alt="Navita Şarap Tabakları" class="h-52 w-full object-cover"><div class="p-6"><span class="text-[10px] text-navitaGold font-bold tracking-widest uppercase">Eşlikçiler</span><h3 class="font-serif text-2xl font-bold text-navitaNavy mt-1">Şarap Eşlikçileri</h3><p class="text-sm text-slate-600 mt-2">Peynir, soğuk et ve çerez tabaklarıyla tamamlanan premium deneyim.</p></div></div>
             </div>
         </div>
     </section>
@@ -474,19 +442,19 @@
             <!-- Tiled Gallery Layout -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="relative group h-80 rounded-3xl overflow-hidden shadow-lg border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=600&q=80" alt="Sofra Detayı" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="images/mekan.jpeg" alt="Sofra Detayı" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-navitaNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-serif text-xl">Şık Ege Masası</span>
                     </div>
                 </div>
                 <div class="relative group h-80 rounded-3xl overflow-hidden shadow-lg border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Bar & Kokteyl" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="images/2.jpeg" alt="Bar & Kokteyl" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-navitaNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-serif text-xl">Bistro Bar Alanı</span>
                     </div>
                 </div>
                 <div class="relative group h-80 rounded-3xl overflow-hidden shadow-lg border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=600&q=80" alt="Gece Eğlencesi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="images/navita.jpg" alt="Gece Eğlencesi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-navitaNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <span class="text-white font-serif text-xl">Günbatımı Akustik Dinletiler</span>
                     </div>
